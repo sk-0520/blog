@@ -1,0 +1,63 @@
+name: Build
+
+on: push
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: <Checkout> Repository
+        uses: actions/checkout@v3
+
+      - name: <Add> Node/NPM
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.4.0
+          cache: npm
+
+      - name: <Install> NPM
+        run: npm ci
+
+      - name: <Build> Blog
+        run: npm run build
+
+      - name: <Artifact> Blog
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    needs: build
+
+    if: github.ref == 'refs/heads/main'
+
+    runs-on: ubuntu-22.04
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: <Download> Application
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: 'dist'
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
+
