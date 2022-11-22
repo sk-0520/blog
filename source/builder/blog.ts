@@ -70,7 +70,7 @@ function loadPostSetting(path: string): PostSetting {
  * 一覧生成。
  * @param items
  */
-function outputList(items: ReadonlyArray<PostItem>, outputDirectoryPath: string) {
+function outputList(items: ReadonlyArray<PostItem>, outputDirectoryPath: string, isProduction: boolean) {
 
 }
 
@@ -78,7 +78,7 @@ function outputList(items: ReadonlyArray<PostItem>, outputDirectoryPath: string)
  * 記事生成。
  * @param items
  */
- function outputPost(items: ReadonlyArray<PostItem>, outputDirectoryPath: string) {
+ function outputPost(items: ReadonlyArray<PostItem>, outputDirectoryPath: string, isProduction: boolean) {
 
 }
 
@@ -86,12 +86,12 @@ function outputList(items: ReadonlyArray<PostItem>, outputDirectoryPath: string)
  * 記事生成。
  * @param items
  */
-function output(items: ReadonlyArray<PostItem>, outputDirectoryPath: string) {
-	outputList(items, outputDirectoryPath);
-	outputPost(items, outputDirectoryPath);
+function output(items: ReadonlyArray<PostItem>, outputDirectoryPath: string, isProduction: boolean) {
+	outputList(items, outputDirectoryPath, isProduction);
+	outputPost(items, outputDirectoryPath, isProduction);
 }
 
-export function build(sourceDirectoryPath: string, postDirectoryPath: string, outputDirectoryPath: string) {
+export function build(rootDirectoryPath: string, sourceDirectoryPath: string, postDirectoryPath: string, outputDirectoryPath: string, isProduction: boolean) {
 	glob(
 		"*/post.json",
 		{
@@ -114,7 +114,7 @@ export function build(sourceDirectoryPath: string, postDirectoryPath: string, ou
 
 			console.log(items);
 
-			output(items, outputDirectoryPath);
+			output(items, outputDirectoryPath, isProduction);
 		}
 	);
 }
