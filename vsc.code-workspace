@@ -37,7 +37,16 @@
 		],
 		"auto-close-tag.activationOnLanguage": [
 			"xml",
-			"html"
+			"html",
+			"njk",
 		],
+	},
+	"extensions": {
+		"recommendations": [
+			"ronnidc.nunjucks",
+			"formulahendry.auto-close-tag",
+			"streetsidesoftware.code-spell-checker",
+			"editorconfig.editorconfig"
+		]
 	}
 }

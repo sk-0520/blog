@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/home.njk
+eleventyComputed:
+  title: タグ絞り込み “{{ tag }}”
+permalink: /tags/{{ tag | slugify }}/
+---
+<h1>タグ絞り込み “{{ tag }}”</h1>
+
+{% set postslist = collections[ tag ] %}
+{% include "postslist.njk" %}
+
+<p><a href="{{ '/tags/' | url }}">タグ一覧を表示</a>.</p>
