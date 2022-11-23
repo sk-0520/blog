@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("yyyy/MM/dd");
+    return DateTime.fromJSDate(dateObj).toFormat("yyyy/MM/dd");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
