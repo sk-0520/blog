@@ -25,10 +25,15 @@ export function build(rootDirectoryPath: string, sourceDirectoryPath: string, sc
 
 	const sourceTypeScript = fs.readFileSync(inputScriptFilePath).toString();
 	//sourceJavaScript
-	const aaa = ts.transpileModule(sourceTypeScript, {
-compilerOptions: options,
-	});
+	const diagnostics:ts.Diagnostic[] = [];
+	const sourceJavaScript = ts.transpile(sourceTypeScript, options, inputScriptFilePath, diagnostics)
+	for(const diagnostic of diagnostics) {
+		console.warn(diagnostic);
+	}
+// 	const aaa = ts.transpileModule(sourceTypeScript, {
+// compilerOptions: options,
+// 	});
 
-	//fs.writeFileSync(outputScriptFilePath, sourceJavaScript);
-	fs.writeFileSync(outputScriptFilePath, aaa .outputText);
+	fs.writeFileSync(outputScriptFilePath, sourceJavaScript);
+	// fs.writeFileSync(outputScriptFilePath, aaa .outputText);
 }

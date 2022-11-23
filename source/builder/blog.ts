@@ -112,7 +112,7 @@ export function build(rootDirectoryPath: string, sourceDirectoryPath: string, po
 				.sort((a, b) => a.setting.timestamp.getTime() - b.setting.timestamp.getTime())
 				;
 
-			console.log(items);
+			//console.log(items);
 
 			output(items, outputDirectoryPath, isProduction);
 		}
