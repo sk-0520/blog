@@ -2,8 +2,8 @@
   "name": "blog",
   "version": "0.0.0",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve"
+    "watch": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
