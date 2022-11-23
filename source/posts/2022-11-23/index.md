@@ -9,5 +9,5 @@ layout: layouts/post.njk
 
 テストブログ
 
-![a.png](a.png)
+![a.png](attached/a.png)
 
