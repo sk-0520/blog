@@ -4,5 +4,49 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/bin": true,
+			"**/obj": true,
+			"**/node_modules": true,
+			".vs": true,
+			"*.lnk": true
+		},
+		"files.watcherExclude": {
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/node_modules/*/**": true,
+			".vs": true,
+			".vscode": true,
+			"**/dist/**": true,
+			"**/bin/**": true,
+			"**/obj/**": true,
+			"*.lnk": true,
+		},
+		"html.format.indentInnerHtml": true,
+		"html.format.wrapLineLength": 0,
+		"json.schemas": [
+			{
+				"fileMatch": [
+					"*.jsonc"
+				],
+				"schema": {
+					"allowTrailingCommas": true
+				}
+			}
+		],
+		"auto-close-tag.activationOnLanguage": [
+			"xml",
+			"html",
+			"njk",
+		],
+	},
+	"extensions": {
+		"recommendations": [
+			"ronnidc.nunjucks",
+			"formulahendry.auto-close-tag",
+			"streetsidesoftware.code-spell-checker",
+			"editorconfig.editorconfig"
+		]
+	}
 }

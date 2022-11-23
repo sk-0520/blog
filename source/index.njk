@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+---
+{% set maxPosts = collections.posts.length | min(20) %}
+<h1>最新の記事一覧 {% if 1 < maxPosts %}{{ maxPosts }} 件{% endif %}</h1>
+
+{% set postslist = collections.posts | head(-maxPosts) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
+{%- if maxPosts < collections.posts.length %}
+<p><a href="{{ '/posts/' | url }}">記事一覧を表示</a></p>
+{%- endif %}
