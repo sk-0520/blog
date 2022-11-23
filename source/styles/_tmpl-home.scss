@@ -1,0 +1,19 @@
+.tmpl-home {
+  &>h1 {
+    //background-color: red;
+  }
+
+  .postlist {
+    .postlist-item {
+      margin-bottom: 1ex;
+
+      .postlist-link {
+        display: block;
+      }
+
+      .postlist-note {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

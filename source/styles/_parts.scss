@@ -1,0 +1,11 @@
+.post-tag {
+  border: 1px solid gray;
+  padding: 1px 4px;
+  font-size: 0.8em;
+  color: #111;
+  background: #fff;
+
+  &+& {
+    margin-left: 1ex;
+  }
+}

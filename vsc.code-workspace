@@ -37,7 +37,8 @@
 		],
 		"auto-close-tag.activationOnLanguage": [
 			"xml",
-			"html"
+			"html",
+			"njk",
 		],
 	},
 	"extensions": {

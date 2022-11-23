@@ -1,4 +1,9 @@
+@forward '../../node_modules/normalize-sass/normalize.sass';
+
 @forward 'prism/prism-diff.css';
 @forward 'prism/prism-base16-monokai.dark.css';
 
-@forward 'index';
+@forward 'layout';
+@forward 'parts';
+@forward 'tmpl-home';
+@forward 'tmpl-post';

@@ -1,0 +1,75 @@
+@use 'responsive' as responsive;
+
+html,
+body {
+  // https://saruwakakun.com/font-family
+  font-family: 'Gadugi', 'Meiryo UI', 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+  font-size: 12pt;
+
+  background: #ffe;
+  color: #111;
+}
+
+body {
+  padding: 2em 3em;
+
+  @include responsive.media(responsive.$s) {
+    padding: 1em 1em;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.5ex;
+  border-bottom: 3px double #aaaaaa;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 2em;
+
+    a {
+      color: #111;
+    }
+  }
+
+  nav {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+
+    ul {
+      margin: 0 0 0 0.5ex;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 5em 1em 1em 1em;
+  text-align: center;
+
+  &>ul {
+    li {
+      display: inline;
+
+      & + li {
+        margin-left: 1em;
+      }
+    }
+  }
+}
