@@ -11,8 +11,15 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const eleventySass = require("eleventy-sass");
 
 module.exports = function (eleventyConfig) {
-  // Copy the `img` and `css` folders to the output
-  eleventyConfig.addPassthroughCopy("img");
+  // ブログ内データの移送設定
+  const postFileExtensions = [
+    'png',
+    'jpg', 'jpeg',
+    'zip', '7z'
+  ];
+  for(const postFileExtension of postFileExtensions) {
+    eleventyConfig.addPassthroughCopy(`source/posts/**/*.${postFileExtension}`);
+  }
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);

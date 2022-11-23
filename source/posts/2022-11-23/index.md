@@ -8,3 +8,6 @@ layout: layouts/post.njk
 ---
 
 テストブログ
+
+![a.png](a.png)
+
