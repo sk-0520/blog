@@ -8,7 +8,7 @@ movie:
   language: ドイツ語
   release: 2018
   title:
-    origin: A Clockwork Orange
+    origin: CUT OFF
     ja: カット/オフ
   official:
     origin: https://darkskyfilms.com/film/cut-off/
