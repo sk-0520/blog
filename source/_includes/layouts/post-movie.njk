@@ -1,0 +1,50 @@
+---
+layout: layouts/post.njk
+templateClass: tmpl-post
+---
+<details class="movie">
+  <summary>情報 <span class="rating" data-rate="{{ movie.rating.rate }}"></span><spa class="comment">{{ movie.rating.comment }}</span></summary>
+  <dl class="contents">
+    {% if movie.title.ja %}
+    <dt>邦題</dt>
+    <dd>{{ movie.title.ja }}</dd>
+    {% endif %}
+    {% if movie.title.origin %}
+    <dt>原題{% if movie.language %}({{ movie.language }}){% endif %}</dt>
+    <dd>{{ movie.title.origin }}</dd>
+    {% endif %}
+    <dt>公開年</dt>
+    <dd>{{ movie.release }}</dd>
+    {% if movie.video %}
+    <dt>映像</dt>
+    <dd>
+      <dl>
+      {% if movie.video.youtube %}
+        <dt><a href="https://www.youtube.com/watch?v={{ movie.video.youtube }}" target="_blank">Youtube</a></dt>
+        <dd>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/{{ movie.video.youtube }}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </dd>
+      {% endif %}
+      </dl>
+    </dd>
+    {% endif %}
+    <dt>視聴元</dt>
+    <dd>
+      <ul>
+      {% if movie.watch.amazon_prime %}
+        <li><a href="https://www.amazon.co.jp/dp/{{ movie.watch.amazon_prime }}" target="_blank">Amazon Prime Video</a></li>
+      {% endif %}
+      </ul>
+    </dd>
+  </dl>
+</details>
+
+{{ content | safe }}

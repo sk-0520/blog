@@ -1,0 +1,56 @@
+details.movie {
+  &[open] {
+    summary::before {
+      content: '▼';
+    }
+  }
+
+  summary {
+    cursor: pointer;
+
+    &::before {
+      content: '▶';
+    }
+  }
+
+  .rating {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+
+    &::before,
+    &::after {
+      content: '★★★★★';
+      color: gray;
+    }
+
+    &::after {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      color: #ffff45;
+      text-shadow: 0 0 2px black;
+    }
+
+    @for $rate from 0 to 5 {
+      &[data-rate="#{$rate}"]::after {
+        width: calc(#{$rate} * 20%);
+      }
+    }
+  }
+
+  .comment {
+    font-size: 90%;
+    color: #333;
+  }
+
+  .contents {
+    margin-left: 1ex;
+    // dt {
+    // }
+    // dd {
+    // }
+  }
+}
