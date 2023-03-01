@@ -1,6 +1,6 @@
 ---
 title: ゲーム Sniper Ghost Warrior Contracts 2
-date: 2023-02-02T31:00:00+09:00
+date: 2023-02-02T13:00:00+09:00
 layout: layouts/post.njk
 tags:
   - game
