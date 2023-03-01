@@ -13,17 +13,17 @@
   },
   "homepage": "https://sk-0520.github.io/blog/",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "luxon": "^3.1.1",
+    "luxon": "^3.2.1",
     "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.5"
+    "markdown-it-anchor": "^8.6.7"
   },
   "devDependencies": {
-    "eleventy-sass": "^2.1.3",
+    "eleventy-sass": "^2.2.1",
     "normalize-sass": "^1.0.0",
-    "npm-check-updates": "^16.5.6"
+    "npm-check-updates": "^16.7.10"
   }
 }
