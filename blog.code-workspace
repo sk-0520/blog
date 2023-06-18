@@ -40,6 +40,9 @@
 			"html",
 			"njk",
 		],
+		"cSpell.words": [
+			"JAPANNEXT"
+		],
 	},
 	"extensions": {
 		"recommendations": [

@@ -2,6 +2,9 @@
 title: PCディスプレイを買った
 date: 2023-06-03T19:00:00+09:00
 layout: layouts/post.njk
+tags:
+  - display
+  - JAPANNEXT
 ---
 
 [以前ぶっ壊れた](../../05/09/)ディスプレイの後継機を買った。

@@ -2,6 +2,8 @@
 title: PCディスプレイが壊れた
 date: 2023-05-09T14:00:00+09:00
 layout: layouts/post.njk
+tags:
+  - display
 ---
 
 特に意味もなくとった有給休暇の午後、いきなりディスプレイ壊れるの巻。
