@@ -22,8 +22,8 @@
     "markdown-it-anchor": "^8.6.7"
   },
   "devDependencies": {
-    "eleventy-sass": "^2.2.1",
+    "eleventy-sass": "^2.2.3",
     "normalize-sass": "^1.0.0",
-    "npm-check-updates": "^16.10.12"
+    "npm-check-updates": "^16.10.13"
   }
 }
