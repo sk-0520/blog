@@ -4,7 +4,7 @@ date: 2023-06-29T21:00:00+09:00
 layout: layouts/post.njk
 tags:
   - amazon
-  - aws
+  - AWS
 ---
 
 Amazon Prime 会員なわけなんだけど、
