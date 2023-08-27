@@ -4,7 +4,7 @@ date: 2023-02-02T13:00:00+09:00
 layout: layouts/post.njk
 tags:
   - game
-  - Steam
+  - steam
 ---
 
 PC 新しくして謎にいいスペックにしたので [Steam](https://store.steampowered.com) デビューした。

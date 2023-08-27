@@ -4,6 +4,7 @@ date: 2023-08-27T22:00:00+09:00
 layout: layouts/post.njk
 tags:
   - game
+  - steam
   - ac6
 ---
 

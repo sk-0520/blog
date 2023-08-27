@@ -4,7 +4,7 @@ date: 2023-02-02T13:00:00+09:00
 layout: layouts/post.njk
 tags:
   - game
-  - Steam
+  - steam
 ---
 
 URL: https://store.steampowered.com/app/1338770/Sniper_Ghost_Warrior_Contracts_2
