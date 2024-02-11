@@ -12,11 +12,11 @@ Pe 0.99.221 以下は自動バージョンアップが動かないので以下�
 
 `<Pe>\etc\appsettings.json`
 
-```jsonc
+```diff
 {
   "general": {
-    (現)"version_check_uri": "https://peserver.gq/api/application/version/update"
-    (新)"version_check_uri": "https://peserver.site/api/application/version/update"
+-    (現)"version_check_uri": "https://peserver.gq/api/application/version/update"
++    (新)"version_check_uri": "https://peserver.site/api/application/version/update"
   }
 }
 ```
