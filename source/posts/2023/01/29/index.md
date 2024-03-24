@@ -4,6 +4,7 @@ date: 2023-01-29T13:00:00+09:00
 layout: layouts/post.njk
 tags:
   - Visual Studio
+  - .NET IntelliSense
 ---
 
 Visual Studio がいつのころからか(.NET Core くらい？)インテリセンスのローカライズは自動じゃなくて手動で適用するようになったじゃないですか。  
