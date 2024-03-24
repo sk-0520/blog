@@ -59,7 +59,5 @@ jobs:
 
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: 'dist'
+        uses: actions/deploy-pages@v1
 
