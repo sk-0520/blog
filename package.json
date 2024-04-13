@@ -24,6 +24,6 @@
   "devDependencies": {
     "eleventy-sass": "^2.2.4",
     "normalize-sass": "^1.0.0",
-    "npm-check-updates": "^16.14.17"
+    "npm-check-updates": "^16.14.18"
   }
 }
