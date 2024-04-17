@@ -31,5 +31,6 @@ Pe(0.99.229) のブラウザコントロールを [WebView2](https://developer.m
        * 現行 interface にどうやっても合わせられなかった
      * デメリットではないが個人的には [HwndHost](https://learn.microsoft.com/ja-jp/dotnet/api/system.windows.interop.hwndhost?view=windowsdesktop-8.0) ではなく [Control](https://learn.microsoft.com/ja-jp/dotnet/api/system.windows.controls.control?view=windowsdesktop-8.0) 派生にしてほしかったなぁ
        * べつに回転も拡縮もしないけどさ
+     * 止まってもいいから同期的初期化処理ほしい
 
 
