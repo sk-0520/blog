@@ -4,6 +4,7 @@ date: 2024-02-08T22:30:00+09:00
 layout: layouts/post.njk
 tags:
   - Pe
+  - domain
 ---
 
 新バージョン: https://peserver.site/

@@ -5,6 +5,7 @@ layout: layouts/post.njk
 tags:
   - freenom
   - Pe
+  - domain
 ---
 
 Pe の API とかここに寄せてるのにまじかもう、もう、猶予期間とかないんかい。
