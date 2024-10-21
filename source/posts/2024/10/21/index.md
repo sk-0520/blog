@@ -3,7 +3,7 @@ title: ドメインを無料でなんかこう得られないだろうか
 date: 2024-10-21T21:22:00+09:00
 layout: layouts/post.njk
 tags:
-  - pe
+  - Pe
   - domain
 ---
 
