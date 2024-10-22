@@ -4,8 +4,8 @@
   "scripts": {
     "watch": "eleventy --serve",
     "build": "eleventy",
-		"npm-check": "ncu",
-		"npm-update": "ncu -u & npm install"
+    "npm-check": "ncu",
+    "npm-update": "ncu -u & npm install"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,6 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
