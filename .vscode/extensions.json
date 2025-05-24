@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"ronnidc.nunjucks",
+		"formulahendry.auto-close-tag",
+		"streetsidesoftware.code-spell-checker",
+		"editorconfig.editorconfig"
+	]
+}
